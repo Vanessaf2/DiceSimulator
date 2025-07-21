@@ -11,19 +11,19 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.source>11</maven.compiler.source> <!-- Or your JDK version -->
+        <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
-        <javafx.version>20</javafx.version> <!-- Updated JavaFX version -->
+        <javafx.version>20</javafx.version>
     </properties>
 
     <dependencies>
-        <!-- JavaFX Controls -->
+        
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-controls</artifactId>
             <version>${javafx.version}</version>
         </dependency>
-        <!-- JavaFX FXML -->
+        
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-fxml</artifactId>
@@ -33,7 +33,7 @@
 
     <build>
         <plugins>
-            <!-- Compiler plugin -->
+            
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -44,7 +44,7 @@
                 </configuration>
             </plugin>
 
-            <!-- JavaFX Maven plugin -->
+            
             <plugin>
                 <groupId>org.openjfx</groupId>
                 <artifactId>javafx-maven-plugin</artifactId>
@@ -53,7 +53,7 @@
                     <execution>
                         <id>default-cli</id>
                         <configuration>
-                            <mainClass>DiceSimulator</mainClass> <!-- Replace with your main class -->
+                            <mainClass>DiceSimulator</mainClass>
                         </configuration>
                     </execution>
                 </executions>
